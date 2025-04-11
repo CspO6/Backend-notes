@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 services:
   # Servicio de la aplicación Spring Boot
@@ -9,7 +9,7 @@ services:
     ports:
       - "8080:8080" # Mapea el puerto 8080 del contenedor al puerto 8080 del host
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/notesdb?useSSL=false&serverTimezone=UTC
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/notesdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       - SPRING_DATASOURCE_USERNAME=notes
       - SPRING_DATASOURCE_PASSWORD=sasa
     depends_on:
@@ -19,12 +19,12 @@ services:
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: your_root_password
+      MYSQL_ROOT_PASSWORD: sasa
       MYSQL_DATABASE: notesdb
       MYSQL_USER: notes
       MYSQL_PASSWORD: sasa
     ports:
-      - "3306:3306" # Mapea el puerto 3306 del contenedor al puerto 3306 del host
+      - "3307:3306" # Mapea el puerto 3306 del contenedor al puerto 3306 del host
     volumes:
       - mysql_data:/var/lib/mysql # Persiste los datos de MySQL
 

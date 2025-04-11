@@ -1,24 +1,14 @@
+# Usar una imagen base con Java
+FROM openjdk:21-jdk-slim
 
- # Use a lightweight Java image
-FROM openjdk:21-jdk-slim 
-
-# Set the working directory
+# Configurar el directorio de trabajo
 WORKDIR /app
 
-# Copy the JAR file into the container
-COPY target/notes-0.0.1-SNAPSHOT.jar notes-0.0.1-SNAPSHOT.jar
+# Copiar el archivo JAR generado por Maven
+COPY target/notes-0.0.1-SNAPSHOT.jar app.jar
 
-# Expose the port your app runs on
+# Exponer el puerto 8080 (puerto predeterminado de Spring Boot)
 EXPOSE 8080
 
-# Run the application
-ENTRYPOINT ["java", "-jar", "notes-0.0.1-SNAPSHOT .jar"]
-
-FROM mysql:8.0
-
-ENV MYSQL_ROOT_PASSWORD=your_root_password
-ENV MYSQL_DATABASE=notesdb
-ENV MYSQL_USER=notes
-ENV MYSQL_PASSWORD=your_password
-
-EXPOSE 3306
+# Comando para ejecutar la aplicación
+ENTRYPOINT ["java", "-jar", "app.jar"]
