@@ -1,32 +1,29 @@
-
+version: '3.8'
 
 services:
-  # Servicio de la aplicación Spring Boot
   app:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080" # Mapea el puerto 8080 del contenedor al puerto 8080 del host
+      - "8080:8080"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/notesdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-      - SPRING_DATASOURCE_USERNAME=notes
-      - SPRING_DATASOURCE_PASSWORD=sasa
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/notesdb
+      SPRING_DATASOURCE_USERNAME: notes
+      SPRING_DATASOURCE_PASSWORD: sasa
     depends_on:
-      - db # Asegura que el servicio "db" (MySQL) esté disponible antes de iniciar la aplicación
+      - db
 
-  # Servicio de MySQL
   db:
-    image: mysql:8.0
+    image: postgres:15
     environment:
-      MYSQL_ROOT_PASSWORD: sasa
-      MYSQL_DATABASE: notesdb
-      MYSQL_USER: notes
-      MYSQL_PASSWORD: sasa
+      POSTGRES_DB: notesdb
+      POSTGRES_USER: notes
+      POSTGRES_PASSWORD: sasa
     ports:
-      - "3307:3306" # Mapea el puerto 3306 del contenedor al puerto 3306 del host
+      - "5432:5432"
     volumes:
-      - mysql_data:/var/lib/mysql # Persiste los datos de MySQL
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  mysql_data: # Volumen para persistir los datos de MySQL
+  postgres_data:
