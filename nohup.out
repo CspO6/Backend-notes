@@ -1,0 +1,275 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.notes:notes >---------------------------
+[INFO] Building notes 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.4:run (default-cli) > test-compile @ notes >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ notes ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ notes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ notes ---
+[INFO] skip non existing resourceDirectory /home/sebas/Escritorio/Project/Backend-notes/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ notes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.4.4:run (default-cli) < test-compile @ notes <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.4:run (default-cli) @ notes ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-10T16:22:42.664-05:00  INFO 15877 --- [notes] [           main] com.notes.notes.NotesApplication         : Starting NotesApplication using Java 21.0.6 with PID 15877 (/home/sebas/Escritorio/Project/Backend-notes/target/classes started by sebas in /home/sebas/Escritorio/Project/Backend-notes)
+2025-04-10T16:22:42.666-05:00  INFO 15877 --- [notes] [           main] com.notes.notes.NotesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-04-10T16:22:43.107-05:00  INFO 15877 --- [notes] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10T16:22:43.158-05:00  INFO 15877 --- [notes] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2025-04-10T16:22:43.516-05:00  INFO 15877 --- [notes] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-10T16:22:43.530-05:00  INFO 15877 --- [notes] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-10T16:22:43.530-05:00  INFO 15877 --- [notes] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10T16:22:43.563-05:00  INFO 15877 --- [notes] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-10T16:22:43.564-05:00  INFO 15877 --- [notes] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 867 ms
+2025-04-10T16:22:43.699-05:00  INFO 15877 --- [notes] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10T16:22:43.729-05:00  INFO 15877 --- [notes] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10T16:22:43.748-05:00  INFO 15877 --- [notes] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-10T16:22:43.905-05:00  INFO 15877 --- [notes] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10T16:22:43.930-05:00  INFO 15877 --- [notes] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-10T16:22:44.044-05:00  INFO 15877 --- [notes] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44384b4a
+2025-04-10T16:22:44.045-05:00  INFO 15877 --- [notes] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-10T16:22:44.078-05:00  WARN 15877 --- [notes] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-10T16:22:44.079-05:00  WARN 15877 --- [notes] [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-10T16:22:44.090-05:00  INFO 15877 --- [notes] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10T16:22:44.626-05:00  INFO 15877 --- [notes] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10T16:22:44.675-05:00  INFO 15877 --- [notes] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T16:22:44.834-05:00  INFO 15877 --- [notes] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-10T16:22:45.278-05:00  WARN 15877 --- [notes] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10T16:22:45.492-05:00  INFO 15877 --- [notes] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-10T16:22:45.500-05:00  INFO 15877 --- [notes] [           main] com.notes.notes.NotesApplication         : Started NotesApplication in 3.131 seconds (process running for 3.361)
+2025-04-10T16:24:11.388-05:00  INFO 15877 --- [notes] [nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10T16:24:11.388-05:00  INFO 15877 --- [notes] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-10T16:24:11.393-05:00  INFO 15877 --- [notes] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.archived=0
+Hibernate: select t1_0.id,t1_0.name from tag t1_0
+Hibernate: select t1_0.id,t1_0.name from tag t1_0
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.archived=0
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.archived=0
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.archived=0
+Hibernate: select t1_0.id,t1_0.name from tag t1_0
+Hibernate: select t1_0.id,t1_0.name from tag t1_0
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select t1_0.id,t1_0.name from tag t1_0
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select t1_0.id,t1_0.name from tag t1_0 where t1_0.name=?
+Hibernate: select t1_0.id,t1_0.name from tag t1_0 where t1_0.name=?
+Hibernate: insert into note (archived,content,title) values (?,?,?)
+Hibernate: insert into note_tag (note_id,tag_id) values (?,?)
+Hibernate: insert into note_tag (note_id,tag_id) values (?,?)
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.id=?
+Hibernate: update note set archived=?,content=?,title=? where id=?
+Hibernate: select t1_0.note_id,t1_1.id,t1_1.name from note_tag t1_0 join tag t1_1 on t1_1.id=t1_0.tag_id where t1_0.note_id=?
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.archived=0
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.archived=1
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.archived=1
+Hibernate: select t1_0.id,t1_0.name from tag t1_0
+Hibernate: select t1_0.id,t1_0.name from tag t1_0
+Hibernate: select t1_0.note_id,t1_1.id,t1_1.name from note_tag t1_0 join tag t1_1 on t1_1.id=t1_0.tag_id where t1_0.note_id=?
+Hibernate: select t1_0.note_id,t1_1.id,t1_1.name from note_tag t1_0 join tag t1_1 on t1_1.id=t1_0.tag_id where t1_0.note_id=?
+Hibernate: select t1_0.note_id,t1_1.id,t1_1.name from note_tag t1_0 join tag t1_1 on t1_1.id=t1_0.tag_id where t1_0.note_id=?
+Hibernate: select t1_0.note_id,t1_1.id,t1_1.name from note_tag t1_0 join tag t1_1 on t1_1.id=t1_0.tag_id where t1_0.note_id=?
+Hibernate: select t1_0.note_id,t1_1.id,t1_1.name from note_tag t1_0 join tag t1_1 on t1_1.id=t1_0.tag_id where t1_0.note_id=?
+Hibernate: select t1_0.note_id,t1_1.id,t1_1.name from note_tag t1_0 join tag t1_1 on t1_1.id=t1_0.tag_id where t1_0.note_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.tag_id,n1_1.id,n1_1.archived,n1_1.content,n1_1.title from note_tag n1_0 join note n1_1 on n1_1.id=n1_0.note_id where n1_0.tag_id=?
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0 where n1_0.id=?
+Hibernate: delete from note_tag where note_id=?
+Hibernate: delete from note where id=?
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.notes:notes >---------------------------
+[INFO] Building notes 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.4:run (default-cli) > test-compile @ notes >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ notes ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ notes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ notes ---
+[INFO] skip non existing resourceDirectory /home/sebas/Desktop/Project/Backend-notes/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ notes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.4.4:run (default-cli) < test-compile @ notes <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.4:run (default-cli) @ notes ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-10T23:29:17.096-05:00  INFO 3013 --- [notes] [           main] com.notes.notes.NotesApplication         : Starting NotesApplication using Java 21.0.6 with PID 3013 (/home/sebas/Desktop/Project/Backend-notes/target/classes started by sebas in /home/sebas/Desktop/Project/Backend-notes)
+2025-04-10T23:29:17.098-05:00  INFO 3013 --- [notes] [           main] com.notes.notes.NotesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-04-10T23:29:17.490-05:00  INFO 3013 --- [notes] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10T23:29:17.542-05:00  INFO 3013 --- [notes] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2025-04-10T23:29:17.882-05:00  INFO 3013 --- [notes] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-10T23:29:17.895-05:00  INFO 3013 --- [notes] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-10T23:29:17.896-05:00  INFO 3013 --- [notes] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10T23:29:17.929-05:00  INFO 3013 --- [notes] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-10T23:29:17.930-05:00  INFO 3013 --- [notes] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 803 ms
+2025-04-10T23:29:18.049-05:00  INFO 3013 --- [notes] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10T23:29:18.076-05:00  INFO 3013 --- [notes] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10T23:29:18.094-05:00  INFO 3013 --- [notes] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-10T23:29:18.240-05:00  INFO 3013 --- [notes] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10T23:29:18.270-05:00  INFO 3013 --- [notes] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-10T23:29:18.381-05:00  INFO 3013 --- [notes] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44384b4a
+2025-04-10T23:29:18.383-05:00  INFO 3013 --- [notes] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-10T23:29:18.410-05:00  WARN 3013 --- [notes] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-10T23:29:18.411-05:00  WARN 3013 --- [notes] [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-10T23:29:18.421-05:00  INFO 3013 --- [notes] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10T23:29:18.939-05:00  INFO 3013 --- [notes] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10T23:29:18.990-05:00  INFO 3013 --- [notes] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T23:29:19.135-05:00  INFO 3013 --- [notes] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-10T23:29:19.561-05:00  WARN 3013 --- [notes] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10T23:29:19.780-05:00  INFO 3013 --- [notes] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-10T23:29:19.789-05:00  INFO 3013 --- [notes] [           main] com.notes.notes.NotesApplication         : Started NotesApplication in 2.979 seconds (process running for 3.217)
+2025-04-10T23:30:08.532-05:00  INFO 3013 --- [notes] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10T23:30:08.532-05:00  INFO 3013 --- [notes] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-10T23:30:08.533-05:00  INFO 3013 --- [notes] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-10T23:31:51.904-05:00  INFO 3013 --- [notes] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10T23:31:51.906-05:00  INFO 3013 --- [notes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-10T23:31:51.909-05:00  INFO 3013 --- [notes] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T23:31:51.911-05:00  INFO 3013 --- [notes] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-10T23:31:51.918-05:00  INFO 3013 --- [notes] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.notes:notes >---------------------------
+[INFO] Building notes 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.4:run (default-cli) > test-compile @ notes >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ notes ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ notes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ notes ---
+[INFO] skip non existing resourceDirectory /home/sebas/Desktop/Project/Backend-notes/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ notes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.4.4:run (default-cli) < test-compile @ notes <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.4:run (default-cli) @ notes ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-10T23:32:14.117-05:00  INFO 4687 --- [notes] [           main] com.notes.notes.NotesApplication         : Starting NotesApplication using Java 21.0.6 with PID 4687 (/home/sebas/Desktop/Project/Backend-notes/target/classes started by sebas in /home/sebas/Desktop/Project/Backend-notes)
+2025-04-10T23:32:14.119-05:00  INFO 4687 --- [notes] [           main] com.notes.notes.NotesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-04-10T23:32:14.524-05:00  INFO 4687 --- [notes] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10T23:32:14.581-05:00  INFO 4687 --- [notes] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2025-04-10T23:32:14.907-05:00  INFO 4687 --- [notes] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-10T23:32:14.918-05:00  INFO 4687 --- [notes] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-10T23:32:14.918-05:00  INFO 4687 --- [notes] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10T23:32:14.946-05:00  INFO 4687 --- [notes] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-10T23:32:14.947-05:00  INFO 4687 --- [notes] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 796 ms
+2025-04-10T23:32:15.067-05:00  INFO 4687 --- [notes] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10T23:32:15.095-05:00  INFO 4687 --- [notes] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10T23:32:15.113-05:00  INFO 4687 --- [notes] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-10T23:32:15.257-05:00  INFO 4687 --- [notes] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10T23:32:15.285-05:00  INFO 4687 --- [notes] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-10T23:32:15.395-05:00  INFO 4687 --- [notes] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@85ab964
+2025-04-10T23:32:15.397-05:00  INFO 4687 --- [notes] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-10T23:32:15.423-05:00  WARN 4687 --- [notes] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-10T23:32:15.424-05:00  WARN 4687 --- [notes] [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-10T23:32:15.435-05:00  INFO 4687 --- [notes] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10T23:32:15.944-05:00  INFO 4687 --- [notes] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10T23:32:15.991-05:00  INFO 4687 --- [notes] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T23:32:16.142-05:00  INFO 4687 --- [notes] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-10T23:32:16.567-05:00  WARN 4687 --- [notes] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10T23:32:16.772-05:00  INFO 4687 --- [notes] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-10T23:32:16.781-05:00  INFO 4687 --- [notes] [           main] com.notes.notes.NotesApplication         : Started NotesApplication in 2.956 seconds (process running for 3.192)
+2025-04-10T23:32:28.582-05:00  INFO 4687 --- [notes] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10T23:32:28.587-05:00  INFO 4687 --- [notes] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-10T23:32:28.589-05:00  INFO 4687 --- [notes] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select n1_0.id,n1_0.archived,n1_0.content,n1_0.title from note n1_0
+2025-04-10T23:34:19.362-05:00  INFO 4687 --- [notes] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10T23:34:19.370-05:00  INFO 4687 --- [notes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-10T23:34:19.373-05:00  INFO 4687 --- [notes] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T23:34:19.374-05:00  INFO 4687 --- [notes] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-10T23:34:19.379-05:00  INFO 4687 --- [notes] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
