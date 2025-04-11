@@ -1,0 +1,13 @@
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\config\CorsConfig.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\controller\NoteController.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\controller\TagController.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\dto\ArchivedStatusRequest.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\dto\NoteRequest.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\dto\TagDTO.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\model\Note.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\model\Tag.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\NotesApplication.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\repository\NoteRepository.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\repository\TagRepository.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\service\NoteService.java
+C:\Users\choco\OneDrive\Documentos\GitHub\Backend-notes\src\main\java\com\notes\notes\service\TagService.java
