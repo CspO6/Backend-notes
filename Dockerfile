@@ -1,15 +1,11 @@
+FROM openjdk:21-jdk-slim
 
- # Use a lightweight Java image
-FROM openjdk:21-jdk-slim 
+ARG JAR_FILE=target/notes-0.0.1-SNAPSHOT.jar
 
-# Set the working directory
+COPY ${JAR_FILE} /app/notes-0.0.1-SNAPSHOT.jar
+
 WORKDIR /app
 
-# Copy the JAR file into the container
-COPY target/notes-0.0.1-SNAPSHOT.jar notes-0.0.1-SNAPSHOT.jar
-
-# Expose the port your app runs on
 EXPOSE 8080
 
-# Run the application
-ENTRYPOINT ["java", "-jar", "notes-0.0.1-SNAPSHOT .jar"]
+ENTRYPOINT ["java", "-jar", "notes-0.0.1-SNAPSHOT.jar"]
