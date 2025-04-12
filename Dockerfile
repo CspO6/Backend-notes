@@ -1,14 +1,15 @@
-# Usar una imagen base con Java
-FROM openjdk:21-jdk-slim
 
-# Configurar el directorio de trabajo
+ # Use a lightweight Java image
+FROM openjdk:21-jdk-slim 
+
+# Set the working directory
 WORKDIR /app
 
-# Copiar el archivo JAR generado por Maven
-COPY target/notes-0.0.1-SNAPSHOT.jar app.jar
+# Copy the JAR file into the container
+COPY target/notes-0.0.1-SNAPSHOT.jar notes-0.0.1-SNAPSHOT.jar
 
-# Exponer el puerto 8080 (puerto predeterminado de Spring Boot)
+# Expose the port your app runs on
 EXPOSE 8080
 
-# Comando para ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the application
+ENTRYPOINT ["java", "-jar", "notes-0.0.1-SNAPSHOT .jar"]
