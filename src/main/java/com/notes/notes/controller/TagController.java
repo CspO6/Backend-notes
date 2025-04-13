@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/tags")
-@CrossOrigin(origins = "https://frontend-notes-29dw28zt7-cspo6s-projects.vercel.app")
+@CrossOrigin(origins = "https://frontend-notes-ky1y03cnf-cspo6s-projects.vercel.app")
 public class TagController {
 
     @Autowired
