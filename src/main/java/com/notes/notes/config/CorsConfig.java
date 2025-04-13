@@ -16,9 +16,9 @@ public class CorsConfig {
 
         // Permite solicitudes desde el frontend en Vercel
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("https://frontend-notes-6e400b7ja-csp06s-projects.vercel.app");
+        config.addAllowedOrigin("https://frontend-notes-lvn31tpw4-cspo6s-projects.vercel.app");
         config.addAllowedOrigin("http://localhost:5173");
-        
+
         // Permite todos los métodos HTTP
         config.addAllowedMethod("*");
 
