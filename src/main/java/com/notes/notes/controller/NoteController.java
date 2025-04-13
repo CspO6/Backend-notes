@@ -16,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/notes")
-@CrossOrigin(origins = "https://frontend-notes-ky1y03cnf-cspo6s-projects.vercel.app")
+@CrossOrigin(origins = "https://frontend-notes-blush.vercel.app")
 public class NoteController {
 
     @Autowired
